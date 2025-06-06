@@ -8,7 +8,8 @@ ruta (c:\windows\system32\config\)
 samdump2 -o hashes.txt system.bak sam.bak
 
 #2 Mediante un diccionario intentamos recuperar el password
-hashcat -m 1000 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt --show
+hashcat -m 1000 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt --show  (kali)
+hashcat -m 1000 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt -o eureka.txt (parrot)
 
 
 
